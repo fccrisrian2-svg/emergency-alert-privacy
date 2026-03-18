@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eliminar cuenta – Emergency Alert</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --red: #d62828;
+      --dark: #0f0f0f;
+      --mid: #1a1a1a;
+      --border: #2a2a2a;
+      --text: #e8e8e8;
+      --muted: #888;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--mid);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: var(--red);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    p { margin-bottom: 1rem; color: #ccc; }
+
+    .steps {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .step {
+      background: var(--mid);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #fff;
+    }
+
+    .step-text {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .step-text strong {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .warning-box {
+      background: rgba(214, 40, 40, 0.1);
+      border: 1px solid rgba(214, 40, 40, 0.3);
+      border-radius: 10px;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+      color: #f87171;
+      font-size: 0.9rem;
+    }
+
+    .warning-box strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .highlight-box {
+      background: var(--mid);
+      border-left: 3px solid var(--red);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    a { color: #f87171; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🚨</div>
+  <div>
+    <h1>Emergency Alert</h1>
+    <p>Eliminación de cuenta y datos</p>
+  </div>
+</header>
+
+<main>
+  <h2>Cómo eliminar tu cuenta</h2>
+  <p>Podés eliminar tu cuenta directamente desde la app siguiendo estos pasos:</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-text">Abrí la app <strong>Emergency Alert</strong> en tu dispositivo.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-text">Ingresá a <strong>Configuración</strong> desde el menú principal.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-text">Desplazate hasta el final de la pantalla y tocá <strong>"Eliminar cuenta"</strong>.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-text">Confirmá la acción cuando la app te lo solicite.</div>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <strong>⚠️ Esta acción es permanente</strong>
+    Una vez eliminada tu cuenta, no podrás recuperarla. Todos tus datos serán borrados de nuestros servidores en un plazo de 30 días.
+  </div>
+
+  <h2>¿Qué datos se eliminan?</h2>
+  <p>Al eliminar tu cuenta se borran permanentemente:</p>
+  <div class="highlight-box">
+    — Tu perfil (nombre, email, teléfono)<br/>
+    — Tu historial de ubicaciones<br/>
+    — Tus contactos de emergencia registrados<br/>
+    — Todas las alertas enviadas y recibidas
+  </div>
+
+  <h2>¿Necesitás ayuda?</h2>
+  <p>Si no podés acceder a la app para eliminar tu cuenta, contactanos por email y lo hacemos manualmente en un plazo de 72 horas:</p>
+  <div class="highlight-box">
+    📧 <strong>fccrisrian2@gmail.com</strong>
+  </div>
+</main>
+
+<footer>
+  © 2026 Emergency Alert. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
