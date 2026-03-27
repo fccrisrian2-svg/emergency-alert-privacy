@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eliminar Cuenta – Aviso Familia</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f7fb;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1A56A0, #2d7dd2);
+      color: white;
+      text-align: center;
+      padding: 48px 24px 36px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-left: 4px solid #1A56A0;
+    }
+
+    .card h2 {
+      font-size: 1.05rem;
+      color: #1A56A0;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 8px;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      color: #444;
+      padding: 5px 0 5px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 6px;
+      color: #1A56A0;
+      font-size: 1.4rem;
+      line-height: 1;
+      top: 4px;
+    }
+
+    .highlight {
+      background: #eef4ff;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 12px;
+      font-size: 0.92rem;
+      color: #1A56A0;
+      font-weight: 500;
+    }
+
+    .warning {
+      background: #fff4e5;
+      border-left: 4px solid #e67e22;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 12px;
+      font-size: 0.92rem;
+      color: #7a4a00;
+    }
+
+    .contact-box {
+      background: #1A56A0;
+      color: white;
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 16px;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      background: white;
+      color: #1A56A0;
+      font-weight: 700;
+      font-size: 0.97rem;
+      padding: 10px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 4px;
+    }
+
+    .contact-box a:hover {
+      background: #eef4ff;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #999;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Aviso Familia</h1>
+  <p>Solicitud de eliminación de cuenta</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>¿Querés eliminar tu cuenta?</h2>
+    <p>Entendemos que puede haber distintos motivos para querer dejar de usar la app. Si decidís eliminar tu cuenta, lo hacemos sin preguntas.</p>
+    <p>Solo necesitamos que nos escribas un correo para verificar tu identidad y procesar la solicitud de forma segura.</p>
+  </div>
+
+  <div class="card">
+    <h2>¿Qué datos se eliminan?</h2>
+    <ul>
+      <li>Tu nombre y datos de cuenta.</li>
+      <li>Tu número de teléfono o correo registrado.</li>
+      <li>Tus contactos de confianza guardados en la app.</li>
+      <li>Cualquier historial de avisos asociado a tu cuenta.</li>
+    </ul>
+    <div class="highlight">Todos tus datos se eliminan de nuestros servidores en un plazo de 30 días desde la solicitud.</div>
+  </div>
+
+  <div class="card">
+    <h2>¿Qué necesitamos de tu parte?</h2>
+    <p>Envianos un correo desde la dirección registrada en tu cuenta con el asunto:</p>
+    <div class="highlight">📩 "Eliminar mi cuenta – Aviso Familia"</div>
+    <p style="margin-top:12px;">En el cuerpo del mensaje podés incluir tu nombre o número de teléfono para que podamos identificar tu cuenta más rápido.</p>
+    <div class="warning">⚠️ Una vez eliminada la cuenta, esta acción no se puede deshacer.</div>
+  </div>
+
+  <div class="contact-box">
+    <h2>Escribinos para eliminar tu cuenta</h2>
+    <p>Respondemos en un plazo de 48 horas hábiles.</p>
+    <a href="mailto:fccrisrian2@gmail.com?subject=Eliminar%20mi%20cuenta%20%E2%80%93%20Aviso%20Familia">
+      📧 fccrisrian2@gmail.com
+    </a>
+  </div>
+
+  <footer>
+    © 2026 Aviso Familia. Todos los derechos reservados.<br/>
+    Desarrollado en Argentina 🇦🇷
+  </footer>
+
+</main>
+</body>
+</html>
